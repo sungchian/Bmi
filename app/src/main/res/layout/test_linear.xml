@@ -11,7 +11,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/ed_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -25,20 +25,20 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/ed_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/b_bmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate Bmi" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/b_help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="INFO" />
