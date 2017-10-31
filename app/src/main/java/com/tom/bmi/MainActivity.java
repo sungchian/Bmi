@@ -1,11 +1,13 @@
 package com.tom.bmi;
 
 import android.support.constraint.ConstraintLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
         float weight = Float.parseFloat(edWeight.getText().toString());
         float height = Float.parseFloat(edHeight.getText().toString());
         float bmi = weight / (height * height);
-        Log.d("MainActivity", String.valueOf(bmi) + bmi);
+        new AlertDialog.Builder(this)
+                .setTitle("Hello")
+                .setMessage("Your BMI is : "+bmi)
+                .setPositiveButton("OK" , null)
+                .show();
+
+
+       /* Log.d("MainActivity", "Your BMI is : " + bmi);
+        Toast.makeText(this, "Your BMI is : " +bmi, Toast.LENGTH_LONG).show();*/
     }
 }
