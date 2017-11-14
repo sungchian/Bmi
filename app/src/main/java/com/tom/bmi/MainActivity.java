@@ -36,7 +36,12 @@ public class MainActivity extends AppCompatActivity {
         float weight = Float.parseFloat(edWeight.getText().toString());
         float height = Float.parseFloat(edHeight.getText().toString());
         float bmi = weight / (height * height);
-
+        if (height>3){
+            new AlertDialog.Builder(this)
+                    .setMessage("身高單位應為公尺!")
+                    .setPositiveButton("OK" , null)
+                    .show();
+        }else
         if (bmi<20){
             new AlertDialog.Builder(this)
                     .setTitle(R.string.bmi_title)
